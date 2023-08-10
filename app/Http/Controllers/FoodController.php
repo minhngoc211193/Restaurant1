@@ -48,7 +48,7 @@ class FoodController extends Controller
     public function show(string $id)
     {
         $food = Food::find($id);
-        return view('food.show', ['food' => $food]);
+        return view('foods.show', ['food' => $food]);
     }
 
     /**
